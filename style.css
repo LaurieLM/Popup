@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial';
+    background: url(https://picsum.photos/seed/picsum/1300/1300) no-repeat center  ;
+    text-align: center;
+}
+
+.box {
+    width: 320px;
+    margin: 200px auto;    
+    padding: 25px;
+    background: rgb(189, 170, 189,0.3);
+    border: 2px solid #fbfbfb;
+    border-radius: 20px/10px;
+
+}
+
+.button {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 25px;
+    color: rgb(226, 176, 176);
+    border: 2px solid rgb(226, 176, 176);
+    border-radius: 30px/50px;
+    padding: 7px;
+    background: rgb(255, 232, 218, 0.70);
+}
+
+.button:hover {
+    background: rgb(226, 176, 176);
+    color: #333;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity .4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 30px auto;
+    padding: 25px;
+    background: rgb(226, 176, 176);
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+
+.popup .cross {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+    color: #524747;
+}
+
+.popup .cross:hover {
+    color: rgb(0, 0, 0);
+}
+
+.popup h2 {
+    font-size: 25px;
+}
+
+.popup p {
+    font-size: 16px;
+    text-align: justify;
+    padding: 25px;
+}
